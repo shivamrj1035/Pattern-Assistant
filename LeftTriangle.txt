@@ -1,0 +1,14 @@
+SOURCE CODE FOR Half Triangle(Left Triangle)
+
+	  System.out.println("Enter rows:");
+        int rows=sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter character you Want print: ");
+        String take=sc.nextLine();
+        //char charactor=take.charAt(0);(If Want to print only one charactor)
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(take+" ");
+                }
+                System.out.println();
+            }

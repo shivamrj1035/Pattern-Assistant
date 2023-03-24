@@ -1,0 +1,20 @@
+SOURCE CODE FOR Pyramid::
+
+        System.out.println("Enter rows:");
+        int rows=sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter character you Want print: ");
+        String take=sc.nextLine();
+        for(int i=1; i<=rows; i++) {
+           
+            for(int j=1; j<=rows-i; j++) {
+                System.out.print(" ");
+            }
+            
+            for(int k=0;k<i;k++){
+				System.out.print(take+" ");
+				
+			}
+            
+            System.out.println();
+        }

@@ -1,0 +1,16 @@
+SOURCE CODE FOR Inverted Half Triangle(Left Triangle)
+
+
+        System.out.println("Enter rows:");
+        int rows=sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter character you Want print: ");
+        String take=sc.nextLine();
+        for(int i=rows; i>=1; i--) {
+            
+            for(int j=1; j<=i; j++) {
+                System.out.print(take+" ");
+            }
+            
+            System.out.println();
+        }

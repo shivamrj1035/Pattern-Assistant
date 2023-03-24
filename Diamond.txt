@@ -1,0 +1,51 @@
+SOURCE CODE FOR Diamond::
+        System.out.println("Enter rows:");
+        int rows=sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter character you Want print: ");
+        String take=sc.nextLine();
+        int spaces = rows - 1;
+        int stars = 1;
+        
+        // Print upper half of the diamond
+        for (int i = 1; i <= rows; i++) {
+            // Print spaces
+            for (int j = 1; j <= spaces; j++) {
+                System.out.print(" ");
+            }
+            
+            // Print characters
+            for (int k = 1; k <= stars; k++) {
+                System.out.print(take);
+            }
+            
+            // Move to next line
+            System.out.println();
+            
+            // Update spaces and stars for the next row
+            spaces--;
+            stars += 2;
+        }
+        
+        spaces = 1;
+        stars = rows * 2 - 3;
+        
+        // Print lower half of the diamond
+        for (int i = 1; i <= rows - 1; i++) {
+            // Print spaces
+            for (int j = 1; j <= spaces; j++) {
+                System.out.print(" ");
+            }
+            
+            // Print characters
+            for (int k = 1; k <= stars; k++) {
+                System.out.print(take);
+            }
+            
+            // Move to next line
+            System.out.println();
+            
+            // Update spaces and stars for the next row
+            spaces++;
+            stars -= 2;
+        }
