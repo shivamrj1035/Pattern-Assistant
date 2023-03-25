@@ -1,8 +1,13 @@
+/* 
+CODED BY: SHIVAM R JAYSWAL
+Contact: +91 9054401780
+insta: @shivamrj_1035
+*This assistant use file reading for Source code so we have to add txt file at same location as Pattern assistant's class file stored*
+ */
 import java.util.*;
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
-
 
 public class Pattern_Assistant {
     public static void main(String[] args){
@@ -446,7 +451,7 @@ class Pattern_Data{
 				System.out.print(" ");
 			}
             for(int k=0;k<i;k++){
-				System.out.print(take+" ");
+				System.out.print("\u001B[31m"+take+"\u001B[0m"+" ");
 			}
             System.out.println();
         }
