@@ -49,3 +49,9 @@ SOURCE CODE FOR Diamond::
             spaces++;
             stars -= 2;
         }
+        
+
+Explaination::
+In this code, the user is prompted to enter the number of rows and the character they want to use. The program then calculates the number of spaces and characters to print on each row, based on the row number.
+
+The program first prints the upper half of the diamond, then the lower half. The number of spaces and characters to print are updated for each row using two separate loops.
